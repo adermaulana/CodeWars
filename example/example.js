@@ -31,4 +31,15 @@
 //   return result;
 // };
 
-// console.log(fizzBuzz(100));
+function getMiddle(s) {
+  result = s.length;
+  tengah = Math.floor(result / 2);
+
+  if (result % 2 === 0) {
+    return s.substring(tengah - 1, tengah + 1);
+  } else {
+    return s.charAt(tengah);
+  }
+}
+
+console.log(getMiddle("testinyadadmwkamda"));
